@@ -1,12 +1,58 @@
 <DOCTYPE html>
 <html>
 <head>
-    <title>ITM780 Lab 3 Assignment</title>
+    <title>ITM780 Lab 5 Assignment</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
+
+
+  
 <h1>Noah (Haotian) Li</h1>
+
+<!-- Navigation Bar -->
+
+<nav>
+  <ul>
+      <li onmouseover="navMouseOver(this)" onmouseout="navMouseOut(this)">
+          <a href="https://www.torontomu.ca/" target="_blank">University</a>
+      </li>
+      <li onmouseover="navMouseOver(this)" onmouseout="navMouseOut(this)">
+          <a href="https://www.linkedin.com/in/noah-li-785824252/" target="_blank">LinkedIn</a>
+      </li>
+      <li onmouseover="navMouseOver(this)" onmouseout="navMouseOut(this)">
+        <a href="#">More</a>
+        <ul class="dropdown">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </li>    
+  </ul>
+</nav>
+
+
+<!-- Button -->
+
+<button onclick="nameInput()">Enter Your Name</button>
+<p id="nameOutput"></p>
+
+<h2 id="about">About Me</h2>
+<p>Hello! My name is Noah (Haotian) Li, and I am a 3rd year Business Technology Management student at the Ted Rogers School of Management. My interests are artificial intelligence, digital media, and cybersecurity.</p>
+
+
+<!-- Profile Picture -->
+
+<div>
+  <img id="profileImage" src="img.jpeg" alt="A portrait photo of Noah's headshot" 
+       width="200" onclick="enlargeImage()" 
+       onmouseout="resetImage()">
+</div>
+
+<!-- Table -->
+
 
 <table>
     <tr>
@@ -37,9 +83,10 @@
 
 
 <h3>Toronto, ON</h3>
-<h3><a href="https://www.linkedin.com/in/noah-li-785824252/">LinkedIn</a></h3>
 
-<h2>Education</h2>
+<!-- Resume -->
+
+<h2 id="education">Education</h2>
 <hr>
 <ul>
     <b><li>Toronto Metropolitan University</li></b>
@@ -104,4 +151,11 @@
     <li>Microsoft Certified: Azure AI Fundamentals</li>
 </ol>
 
+<!-- Contact Information -->
 
+<h2 id="contact">Contact Information</h2>
+<p>You can reach me at <a href="mailto:h10li@torontomu.ca">h10li@torontomu.ca</a>.</p>
+
+
+</body>
+</html>
